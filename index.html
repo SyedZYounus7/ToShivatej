@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label>Enter Your Board Roll No</label>
+    <input placeholder="Board Roll no" type="text" id="hell">
+    <button onclick="check()" type="submit">Enter</button>
+    <label id="errorlabel" style="color: red; font-size: medium;"></label>
+    <script>
+        var inp, errorlab;
+        errorlab = document.getElementById('errorlabel');
+        inp = document.getElementById('hell');
+        
+        function check() {
+            console.log("hello");
+            console.log(inp.value);
+            if (inp.value == 28155473) {
+                window.open("index1.html");
+                // location.replace("index.html");
+            } else {
+                errorlab.innerText = 'Not in the DataBase! Try Again.';
+                // location.replace("index1.html")
+            }
+        }   
+    </script>
+
+</body>
+
+</html>
