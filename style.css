@@ -44,7 +44,7 @@ body {
   padding: 0px 10px;
   transform-style: preserve-3d;
   text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(109px);
+  transform: translate(-50%, -50%) rotateX(calc(var(--i) * 45.5deg)) translateZ(109px);
 }
 .container .box span i {
   font-style: initial;
@@ -58,10 +58,10 @@ body {
 
 @keyframes animate {
   0% {
-    transform: perspective(500px) rotateX(0deg) rotate(5deg);
+    transform: perspective(450px) rotateX(45deg) rotate(15deg);
   }
   100% {
-    transform: perspective(50px) rotateX(360deg) rotate(5deg);
+    transform: perspective(70px) rotateX(315deg) rotate(15deg);
   }
 }
 /* -------- PSEUDO CLASS --------- */
